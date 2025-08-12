@@ -242,24 +242,26 @@ body{
 /*信息栏（PC端会隐藏）*/
 .contentBar .infoBar{
     width:100%;
-    height:150px;
+    height:170px;
     background-color: #e3e2c4;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap:5px;
+    padding-top:5px;
+    padding-left:5px;
 }
 .contentBar .infoBar .left{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin: 9px;
+    margin: 0;
 }
 .contentBar .infoBar .left .avatar{
     width:100px;
     height:100px;
-    margin:2px;
+    margin:0;
     border: 2px solid rgba(0, 0, 0, 0.358);
 }
 .contentBar .infoBar .left .info{
@@ -285,7 +287,7 @@ body{
     display: flex;
     justify-content: flex-start;
     gap:20px;
-    margin: 9px;
+    margin-right: 9px;
 }
 .contentBar .infoBar .menus .menusItem{
     height:70px;
@@ -309,11 +311,12 @@ body{
     transform: scale(1.1);
 }
 .contentBar .infoBar .menus .menusItem span{
-    font-size:30px;
+    font-size:25px;
 }
 .contentBar .infoBar .menus .menusItem p{
+    text-align: center;
     margin:0;
-    font-size:15px;
+    font-size:8px;
 }
 /*分割线*/
 .splitLine{
