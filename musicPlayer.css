@@ -196,3 +196,11 @@ body{
 }
 
 
+/*识别设备*/
+/*移动端*/
+@media screen and (max-width: 767px) {
+    .musicBox{
+        width:300px;
+        height:600px;
+    }
+}

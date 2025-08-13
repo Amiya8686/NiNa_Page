@@ -52,7 +52,8 @@
         <div class="barBox" >
             <span class="currentTime">{{secondToStr(musicStatus.currentTime)}}</span>
             <input type="range" class="progressBar" v-model="musicStatus.currentTime" step="1" min="0" :max="musicStatus.duration"
-                @mouseup="handleProgressBar" @mousedown="musicStatus.isDragged=true;">
+                @mouseup="handleProgressBar" @mousedown="musicStatus.isDragged=true;"
+                @touchend="handleProgressBar" @touchstart="musicStatus.isDragged=true">
             <span class="duration">{{secondToStr(musicStatus.duration)}}</span>
         </div>
         <!--进度按钮盒子-->
